@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Guess the number</title>
+  <meta charset="UTF-8">
+  <link type="text/css" rel="stylesheet" href="css/style.css">
+  <script src="js/script.js" type="text/javascript"></script>
+  <link href="https://fonts.googleapis.com/css?family=Righteous&display=swap" rel="stylesheet">
+
+</head>
+  
+ <body onload="resetGame();" onload="loadSound();">
+   <h3 id="header">Let's Play! You have 6 attempts to guess the number! Good Luck!</h3>
+   <img src="img/start.jpg" alt="Guess Game" id="image">
+    <form action="javascript:void(0);" onsubmit="guessNumber();" method="post">
+      <label for="userGuess">Enter the number </label>
+      <input type="text" name="userGuess" id="userGuess">
+      <button class="show" type="button" onclick="guessNumber();" id="submit-number">Submit</button>
+      <button class="hide" type="button" onclick="resetGame();" id="start-again">Play Again?</button>
+    </form>
+    <div id="result"></div>
+ </body>
+</html>
